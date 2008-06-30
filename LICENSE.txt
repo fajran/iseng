@@ -1,0 +1,4 @@
+[id] Kecuali disebutkan di dalam skrip, lisensi yang digunakan adalah 
+     Public Domain
+
+[en] Unless stated otherwise, the license is is Public Domain
