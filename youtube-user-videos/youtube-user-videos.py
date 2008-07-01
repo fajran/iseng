@@ -10,7 +10,6 @@
 #
 
 import sys
-from sys import stdout
 import gdata.youtube
 import gdata.youtube.service
 
