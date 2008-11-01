@@ -37,8 +37,6 @@ if source == None or destination == None or show_help:
 
 files = {}
 
-print source
-
 for file in os.listdir(source):
 	
 	fullname = os.path.join(source, file)

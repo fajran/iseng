@@ -1,0 +1,25 @@
+#!/bin/bash
+
+LIST=$HOME/list
+HOST=`hostname`
+
+URL=`grep ^$HOST $LIST | cut -d' ' -f 2`
+DIR=`date +%s`
+
+EMAIL=me@example.com
+TARGET=user@fileserver.example.com:incoming/
+
+if [ x"$URL" != x ] ; then
+        mkdir -p /tmp/$DIR
+        cd /tmp/$DIR
+
+        echo "start" | mail $MAIL -s "$DIR $HOST"
+        wget $URL
+        ls -l | mail $MAIL -s "$DIR $HOST"
+
+        scp * $TARGET
+        cd ..
+        rm -rf $DIR
+        echo "uploaded" | $MAIL -s "$DIR $HOST"
+fi
+
