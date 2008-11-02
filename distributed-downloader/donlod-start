@@ -1,10 +1,9 @@
 #!/bin/sh
 
 LIST=$HOME/list
-HOST=`hostname`
 
 cut -d' ' -f 1 $LIST | while read host
 do
-	rsh $host screen -dmS donlod-$HOST $HOME/donlod
+	rsh $host screen -dmS donlod-$host $HOME/donlod
 done
 
