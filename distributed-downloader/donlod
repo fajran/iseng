@@ -20,6 +20,6 @@ if [ x"$URL" != x ] ; then
         scp * $TARGET
         cd ..
         rm -rf $DIR
-        echo "uploaded" | $MAIL -s "$DIR $HOST"
+        echo "uploaded" | mail $MAIL -s "$DIR $HOST"
 fi
 
