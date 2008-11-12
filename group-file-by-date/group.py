@@ -53,7 +53,7 @@ for file in os.listdir(source):
 		files[dir] = group
 
 	except:
-		print >>sys.stdout, "error getting file attribute of %s" % file
+		print >>sys.stderr, "error getting file attribute of %s" % file
 
 print "#!/bin/sh"
 
