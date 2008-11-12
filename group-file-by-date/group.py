@@ -53,10 +53,12 @@ for file in os.listdir(source):
 		files[dir] = group
 
 	except:
-		print "ngaco"
+		print >>sys.stdout, "error getting file attribute of %s" % file
+
+print "#!/bin/sh"
 
 for dir in files:
-	print "mkdir %s" % os.path.join(destination, dir)
+	print "mkdir -p %s" % os.path.join(destination, dir)
 	
 	for file in files[dir]:
 		print "mv \"%s\" \"%s\"" % (os.path.join(source, file), os.path.join(destination, dir, file))
