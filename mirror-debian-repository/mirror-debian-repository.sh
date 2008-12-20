@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# License: Public Domain
+
 DIST=hoary
 SECTIONS="main restricted universe multiverse"
 ARCH=i386
