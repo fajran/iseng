@@ -1,1 +1,1 @@
-Skrip-skrip iseng
+skrip-skrip iseng
