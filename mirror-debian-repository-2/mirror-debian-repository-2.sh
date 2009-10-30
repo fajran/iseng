@@ -73,7 +73,7 @@ for dist in $DIST; do
 
 			echo "- $dist $section $arch"
 
-			wget -x -nH -nv -B $MIRROR --cut-dirs $CUT -P $TARGET -i $TMP
+			wget -x -nH -nv -B $MIRROR/ --cut-dirs $CUT -P $TARGET -i $TMP
 		done
 	done
 done
