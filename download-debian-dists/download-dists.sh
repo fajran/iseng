@@ -25,7 +25,7 @@
 #     ./download-dists \
 #          http://kambing.ui.ac.id/ubuntu/ \
 #          karmic,karmic-updates,karmic-security \
-#          main,restricted,universe,multiverse
+#          main,restricted,universe,multiverse \
 #          i386 \
 #          ubuntu/
 #
