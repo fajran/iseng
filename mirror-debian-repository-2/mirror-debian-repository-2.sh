@@ -7,8 +7,12 @@
 # http://github.com/fajran/iseng/tree/master/mirror-debian-repository
 #
 
-# WARNING: This is not suitable to update your live mirror
-#          since wget overwrite the file as it downloads.
+# WARNING: This script might not suitable to update your *live* mirror
+#          since the index files are replaced on the fly and therefore they
+#          get corrupted until they are fully downloaded. 
+#          In addition to that, package files that are being downloaded are
+#          instantly accessible from outside and therefore clients might
+#          see partial and hence corrupted package files.
 
 # Author: Fajran Iman Rusadi <fajran@ubuntu.com>
 # License: Public Domain, or in other words..
